@@ -61,7 +61,7 @@ function placeMines() {
 
 // Update the counter for remaining mines
 function updateMineCounter() {
-  mineCounter.textContent = `Mines Left: ${minesLeft}`;
+  mineCounter.textContent = `Mines restante: ${minesLeft}`;
 }
 
 // Handle clicks on cells
