@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar_menu">
+          <input class="navbar_menu_input" type="text" value="" readonly />
+          <button class="navbar_btn" id="reset-btn">
+            <img class="img" src="./image/new.png" alt="new" />
+          </button>
+          <input class="navbar_menu_input" type="text" value="" readonly />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <table class="grille"></table>
+      <div id="mine-counter">Mines Left: 0</div>
+    </main>
+    <footer>
+      <select class="btn_drop" id="mines_rows_options">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+      </select>
+      <select class="btn_drop" id="mines_columns_options">
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+      </select>
+    </footer>
+    <section class="liens">
+      <a href="#">Demineur</a>
+    </section>
+    <section class="regles">
+      <h1>Voici les règles</h1>
+      <ul>
+        <li>
+          Le but du jeu est de découvrir toutes les cases libres sans cliquer
+          sur une mine.
+        </li>
+        <li>
+          Les chiffres sur les cases indiquent le nombre de mines présentes dans
+          les cases adjacentes.
+        </li>
+        <li>
+          Utilisez le bouton droit de la souris pour marquer une case suspectée
+          d'être une mine.
+        </li>
+        <li>Le jeu se termine si vous cliquez sur une mine.</li>
+        <li>Vous gagnez si vous découvrez toutes les cases sans mine.</li>
+        <li>
+          Vous pouvez ajuster les dimensions de la grille et le nombre de mines
+          avant de commencer le jeu.
+        </li>
+        <li>
+          Utilisez le bouton "Reset" pour recommencer une nouvelle partie.
+        </li>
+      </ul>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
